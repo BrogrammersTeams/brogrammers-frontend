@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
+
+body {
+  background-color: #eaeff1;
+  font-family: "Raleway", sans-serif;
+}
+
+.profileImg {
+  width: 50%;
+  height: 50%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.col1 {
+  margin-top: 20px;
+  margin-top: 20px;
+  margin-left: -10%;
+  margin-bottom: 20px;
+}
+
+#container {
+  width: 80%;
+  /* Center the container in middle on horizontal axis */
+  margin: 0 auto;
+}
+.card {
+  /* Change background color */
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+  border-radius: 12px;
+}
+/* Style div elements that have class equal to tag */
+.tag1 {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  margin: 1px;
+
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+
+/* Style div elements that have class equal to name */
+.name {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-top: 16px;
+}
+
+/* Style p element */
+p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+}
+
+/* Style button element */
+button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+
+  /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+  margin: 0 auto;
+  display: block;
+
+  /* Button is a clickable element, therefore it should have a pointer cursor */
+  cursor: pointer;
+}
+
+.domains {
+  /* Add space around the details */
+  padding: 16px 8px 8px 8px;
+}
+button:focus,
+button:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  float: left;
+}
+
+.nameInput {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #788697;
+}
+
+.nameInput:focus {
+  outline: none;
+  border: 2px solid #0077ff;
+}
+
+.emailInput {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #788697;
+}
+
+.MobileInput {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #788697;
+}
+
+.githubInput {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #788697;
+}
+
+.linkedinInput {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #788697;
+}
+
+/* tags css */
+
+.contain2 {
+  display: block;
+  height: auto;
+  width: 100%;
+  padding-top: 5px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contain2 input {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #788697;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  margin: 7px 0;
+  margin-right: 10px;
+  padding: 0 10px;
+  padding-right: 5px;
+  border: 1px solid #1c8ffc;
+  border-radius: 5px;
+  background-color: #1c8ffc;
+  white-space: nowrap;
+  color: white;
+}
+
+.tag button {
+  display: flex;
+  padding: 6px;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  color: white;
+}
+
+.bioInput {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #788697;
+  height: 100px;
+  resize: none;
+}
+
+/* qr code */
+.qrcode {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.col2 {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+.cardqr {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
