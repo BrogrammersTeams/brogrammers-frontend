@@ -5,28 +5,34 @@ import "./components.css";
 const FAQPage = () => {
   let FAQ = [
     {
-      qsn: "How can I reach there ?",
-      ans: "Ans 1 lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      qsn: "Who can post to DevConnect?",
+        ans:"Anyone who has an account on DevConnect can post. You have permission to make a new post of any kind as long as it meets our guidelines. ",
+      
     },
     {
-      qsn: "How can I reach there ?",
-      ans: "AQ lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      qsn: "Who is DevConnect for ?",
+      ans: "You! And it’s not just developers who build companies but for small teams, project managers, and college professors all use DevConnect to connect different people and build amazing things together.",
     },
     {
-      qsn: "How can I reach there ?",
-      ans: "A# lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      qsn: "Why should I use DevConnect?", 
+      ans:"Because it is a platform where you can connect with other developers and build your own projects. You can also post your projects and get feedback from other developers. ",
     },
     {
-      qsn: "How can I reach there ?",
-      ans: "A4 lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      qsn: "How do I start using DevConnect?",
+      ans:"All you need to do is sign up and create a profile. You can then start posting your projects and getting feedback from other developers.",
+      
     },
     {
-      qsn: "How can I reach there ?",
-      ans: "A5  lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      qsn: "What is the best thing about DevConnect?",
+      ans: "you can have one to one conversations with other developers and build your own projects. ",
     },
     {
-      qsn: "How can I reach there ?",
-      ans: "A6lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+      qsn: "Will DevConnect help you to improve your skills?",
+      ans: "yes, it definitely will. ",
+    },
+    {
+        qsn: "How do I start using DevConnect?",
+        ans:"All you need to do is sign up and create a profile. You can then start posting your projects and getting feedback from other developers.",
     },
   ];
 
@@ -60,3 +66,4 @@ const FAQPage = () => {
 };
 
 export default FAQPage;
+
