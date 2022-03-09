@@ -1,36 +1,117 @@
 export const QuizArr = {
   html: [
-    {
-      question: "What comes after 1",
-      options: ["2", "3", "4", "5"],
-      answer: 0,
-      points: 2, // <- Index of answer array
-    },
-    {
-      question: "Who is Best In Javascript?",
-      options: ["Vaishnavi", "Adika", "Bhavesh", "Atharva"],
-      answer: 2,
-      points: 2, // <- Index of answer array
-    },
-    {
-      question: "Who is Best In CSS?",
-      options: ["Vaishnavi", "Atharva", "Bhavesh", "Adika"],
-      answer: 1,
-      points: 3, // <- Index of answer array
-    },
-    {
-      question: "Who is Best In Typescript?",
-      options: ["Bhavesh", "Vaishnavi", "Adika", "Atharva"],
-      answer: 0,
-      points: 3, // <- Index of answer array
-    },
-    {
-      question: "Keyword used in Python to declare a function?",
-      options: ["function", "def", "func", "Def"],
-      answer: 1,
-      points: 3, // <- Index of answer array
-    },
-  ],
+      {
+        question: "HTML stands for -",
+        options: [
+            "HighText Machine Language",
+            "HyperText and links Markup Language",
+            "HyperText Markup Language",
+            "None of these"
+        ],
+        answer: 2,
+        points: 2, // <- Index of answer array
+      },
+      {
+        question: "The correct sequence of HTML tags for starting a webpage is -",
+        options: [
+        "Head, Title, HTML, body",
+        "HTML, Body, Title, Head",
+        "HTML, Head, Title, Body",
+        "HTML, Head, Title, Body"
+    ],
+        answer: 3,
+        points: 2, // <- Index of answer array
+      },
+      {
+        question: "Which of the following element is responsible for making the text bold in HTML?",
+        options: [
+            "<pre>",
+            "<a>",
+            "<b>",
+            "<br>"
+        ],
+        answer: 2,
+        points: 3, // <- Index of answer array
+      },
+      {
+        question: "Which of the following tag is used for inserting the largest heading in HTML?",
+        options: [
+            "<h3>",
+            "<h1>",
+            "<h5>",
+            "<h6>"
+            
+        ],
+        answer: 1,
+        points: 3, // <- Index of answer array
+      },
+      {
+        question: "Which of the following tag is used to insert a line-break in HTML?",
+        options: [
+            "<br>",
+            "<a>",
+            "<pre>",
+            "<b>"
+        ],
+        answer: 0,
+        points: 3, // <- Index of answer array
+      },
+      {
+        question: "How to create an unordered list (a list with the list items in bullets) in HTML?",
+        options: [
+             "<ul>",
+             "<ol>",
+            "<li>",
+            "<i>"
+        ],
+        answer: 0,
+        points: 3, // <- Index of answer array
+      },
+      {
+        question: "How to create an ordered list (a list with the list items in numbers) in HTML?",
+        options: [
+            "<ul>",
+           "<ol>",
+          "<li>",
+           "<i>"
+        ],
+        answer: 1,
+        points: 3, // <- Index of answer array
+      },
+      {
+        question: "Which of the following element is responsible for making the text italic in HTML?",
+        options: [
+            "<i>",
+            "<italic>",
+            "<it>",
+            "<pre>"
+        ],
+        answer: 0,
+        points: 3, // <- Index of answer array
+      },
+      {
+        question: "<input> is -",
+        options: [
+            "a format tag.",
+            "an empty tag.",
+            "All of the above",
+            "None of the above"
+        ],
+        answer: 1,
+        points: 3, // <- Index of answer array
+      },
+      {
+        question: "Which of the following tag is used to make the underlined text?",
+        options: [
+            "<i>",
+            "<ul>",
+            "<u>",
+            "<pre>"
+        ],
+        answer: 2,
+        points: 3, // <- Index of answer array
+      },
+    ],
   // css questions
   css: [
     {
