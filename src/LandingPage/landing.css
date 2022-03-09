@@ -1,0 +1,344 @@
+.MainHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.Page {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.NavBar {
+  height: 15vh;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.NavBar #fullLogo {
+  height: 10vh;
+  margin-left: -2%;
+}
+
+.NavBar ul {
+  width: 40%;
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.NavBar ul li {
+  font-size: large;
+  font-weight: bold;
+  font-family: "Advent Pro";
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  color: #777575;
+}
+
+.NavBar ul li:hover {
+  color: #eba80c;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.NavBar .login {
+  width: 15%;
+}
+
+.NavBar .navs li:hover {
+  color: #f08000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.NavBar .navs li:before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  content: "";
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#016996), color-stop(#8600f3), to(#f09402));
+  background: linear-gradient(to right, #016996, #8600f3, #f09402);
+  width: 140%;
+  height: 2px;
+  border-radius: 100px;
+  bottom: -10px;
+  right: -20%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.NavBar ul li:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+#SignMenu {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.3vh;
+  padding: 1vh 1vw;
+  color: white;
+  border-radius: 5px;
+  width: 92%;
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transform: perspective(800px) rotateY(-30deg);
+          transform: perspective(800px) rotateY(-30deg);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background: -webkit-gradient(linear, left top, right top, from(#016996), to(#8e05a3));
+  background: linear-gradient(to right, #016996, #8e05a3);
+}
+
+#SignMenu:hover {
+  -webkit-transform: perspective(400px) rotateY(-30deg) scale(1.2);
+          transform: perspective(400px) rotateY(-30deg) scale(1.2);
+  background: -webkit-gradient(linear, left top, right top, from(#015174), to(#8322d3));
+  background: linear-gradient(to right, #015174, #8322d3);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+#resMenu {
+  height: 4vh;
+  display: none;
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: 4s;
+          transition-duration: 4s;
+  opacity: 1;
+  z-index: 5;
+}
+
+.ResponsiveMenu {
+  z-index: 5;
+  height: 100vh;
+  background-color: rgba(236, 234, 234, 0.814);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  width: 70vw;
+  position: absolute;
+  right: 0;
+  padding: 5vh 5vw;
+  -webkit-transform: translateX(70vw);
+          transform: translateX(70vw);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.ResponsiveMenu #resMenu {
+  height: 4vh;
+  display: block;
+  position: absolute;
+  left: 4vw;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.PageModal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 15vh;
+  height: 70vh;
+}
+
+.OncomingHead {
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(126, 123, 123, 0.786)), color-stop(rgba(255, 255, 255, 0.979)), to(rgba(126, 123, 123, 0.786)));
+  background: linear-gradient(to right, rgba(126, 123, 123, 0.786), rgba(255, 255, 255, 0.979), rgba(126, 123, 123, 0.786));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10vw;
+  margin: 0;
+  margin-top: 0;
+}
+
+.OncomingSubHead {
+  z-index: 1;
+  margin: 0;
+  font-size: 5vw;
+  color: whitesmoke;
+}
+
+.Heads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landingfooter {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.ModalChanger,
+.ModalChanger2 {
+  position: fixed;
+  bottom: 5vh;
+  display: inline-block;
+  right: 2vw;
+  text-align: right;
+  font-family: "Poppins";
+  cursor: pointer;
+  color: purple;
+  background: -webkit-gradient(linear, left top, right top, from(#016996), color-stop(50%, #8c00ff), color-stop(50%, #f09402));
+  background: linear-gradient(to right, #016996, #8c00ff 50%, #f09402 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 5vh;
+  font-weight: 800;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  font-size: large;
+}
+
+.ModalChanger:hover,
+.ModalChanger2:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  background-position: 0 100%;
+}
+
+.ModalChanger2 {
+  left: 2vw;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .NavBar {
+    display: none;
+  }
+  #resMenu {
+    height: 4vh;
+    display: block;
+  }
+  .BackImageMake {
+    width: 60vw;
+    left: 10vw;
+  }
+  .Heads {
+    top: 40vh;
+  }
+  .ModalChanger,
+  .ModalChanger2 {
+    font-size: medium;
+  }
+}
+/*# sourceMappingURL=landing.css.map */

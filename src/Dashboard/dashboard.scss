@@ -1,0 +1,172 @@
+.Dashboard {
+  height: 100vh;
+  width: 100vw;
+}
+
+.DashBar {
+  left: 0;
+  top: 7vh;
+  width: 13vw;
+  height: 93vh;
+  overflow: hidden;
+  padding: 0vw;
+
+  h4 {
+    padding: 0 1vw;
+    transition-duration: 0.2s;
+  }
+
+  transition-duration: 0.2s;
+  .MenuBox {
+    width: 13vw;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    padding: 1vw;
+    cursor: pointer;
+    margin: 0.5vh 0;
+    transition-duration: 0.2s;
+
+    img {
+      height: 2vh;
+      margin-right: 2vw;
+    }
+
+    &:hover {
+      background-color: rgb(216, 215, 215);
+    }
+  }
+}
+
+.DashHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1vw;
+  border-bottom: 0.5px solid rgb(228, 225, 225);
+  .leftMenu {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+  }
+  .Menuu {
+    height: 3vh;
+    cursor: pointer;
+  }
+  .DashLogo {
+    height: 6vh;
+  }
+
+  .ProfileModal {
+    height: 35vh;
+    width: 20%;
+    position: absolute;
+    top: 8vh;
+    right: 2vw;
+    border-radius: 10px;
+    background-color: white;
+    filter: drop-shadow(5px 5px 5px rgb(167, 166, 166));
+    transform: translateX(25vw);
+    transition-duration: 0.5s;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .imgQR {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      height: 15vh;
+    }
+    .ProfileImage {
+      height: 12vh;
+      border-radius: 50%;
+    }
+    h2,
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .SettingsProfile {
+    position: absolute;
+    right: 2vw;
+    padding: 0.5vh 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+    background-color: rgb(230, 236, 238);
+    border-radius: 10px;
+    height: 5vh;
+    img {
+      height: 2vh;
+      border-radius: 50%;
+    }
+  }
+}
+
+.QuickSetup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .InputBox {
+    width: 65%;
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input,
+    select {
+      border: 1px transparent solid;
+      height: 4.5vh;
+      width: 80%;
+      padding: 1vh;
+      font-family: "Syne";
+      background-color: #bebcbc58;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: large;
+
+      &:focus {
+        outline: none;
+        border: 1px rgb(85, 0, 128) solid;
+      }
+    }
+  }
+  .LoginButton {
+    cursor: pointer;
+    border: none;
+    padding: 1vh;
+    font-size: large;
+    width: 50%;
+    border-radius: 5px;
+    color: white;
+    margin: 2vh;
+    background: linear-gradient(to right, rgb(1, 105, 150), rgb(142, 5, 163));
+  }
+}
+
+.DashboardContent {
+  width: 80%;
+  height: 85vh;
+  background-color: rgb(230, 243, 247);
+  margin-left: 5vw;
+  padding: 2vh 2vw;
+  border-radius: 15px;
+}
+
+.DashDown {
+  display: flex;
+  align-items: center;
+}

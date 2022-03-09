@@ -1,0 +1,457 @@
+.AboutPage {
+  height: 100%;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5vh 0vw;
+}
+
+.AboutPage h1 {
+  font-size: 7vh;
+  margin: 0;
+}
+
+.AboutPage h1 b {
+  background: -webkit-gradient(linear, left top, right top, from(#016996), color-stop(#8c00ff), to(#f09402));
+  background: linear-gradient(to right, #016996, #8c00ff, #f09402);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.AboutPage .AboutLgo {
+  height: 85%;
+}
+
+.AboutPage .Text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+  height: 100%;
+}
+
+.AboutPage .Text::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.AboutPage .Text h2,
+.AboutPage .Text h3 {
+  text-align: justify;
+  margin: 0.8vh 0;
+}
+
+.AboutPage .Text h2 {
+  color: #545454;
+}
+
+.AboutPage .Text h3 {
+  margin-top: 2.5vh;
+  font-size: 1.5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: -webkit-gradient(linear, left top, right bottom, from(#8c00ff), to(#f09402));
+  background: linear-gradient(to right bottom, #8c00ff, #f09402);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.AboutPage video {
+  height: 70%;
+  -webkit-transform: perspective(1500px) rotateY(-10deg);
+          transform: perspective(1500px) rotateY(-10deg);
+  border-radius: 15px;
+}
+
+.ServicesAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -2vh;
+}
+
+.ServiceCard:nth-child(3) {
+  width: 28%;
+}
+
+.ServiceCard:nth-child(4) {
+  width: 28%;
+}
+
+.ServiceCard:nth-child(5) {
+  width: 30%;
+}
+
+.ServiceCard:nth-child(1) {
+  width: 40%;
+}
+
+.ServiceCard:nth-child(2) {
+  width: 50%;
+}
+
+.ServiceCard:nth-child(6) {
+  width: 35%;
+}
+
+.ServiceCard:nth-child(7) {
+  width: 55%;
+}
+
+.ServiceCard:nth-child(8) {
+  width: 55%;
+}
+
+.ServiceCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  height: 7vh;
+  margin: 2vh;
+  padding: 0 1vw;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(5px 5px 5px #ead3f0);
+          filter: drop-shadow(5px 5px 5px #ead3f0);
+}
+
+.ServiceCard img {
+  height: 4vh;
+}
+
+.Faq {
+  width: 40%;
+  height: 100%;
+  overflow: scroll;
+  padding: 0 3vw;
+}
+
+.Faq::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.FAQsn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 1vh 3vw;
+  margin: 2vh 0;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(5px 5px 5px #cfc7cf);
+          filter: drop-shadow(5px 5px 5px #cfc7cf);
+  width: 100%;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  border: 1px solid transparent;
+}
+
+.FAQsn h1 {
+  font-size: 3vh;
+  font-family: "Poppins";
+  color: #d8d8d8;
+  font-weight: 800;
+  position: absolute;
+  right: 2vw;
+}
+
+.FAQsn h2 {
+  font-size: 3vh;
+  color: #696868;
+}
+
+.FAQsn:hover {
+  background-color: #f8f8f8;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.FAQsn:hover h1 {
+  color: black;
+}
+
+.FAQAns {
+  width: 55%;
+  height: 100%;
+  padding: 5vh;
+  font-size: 3vh;
+  text-align: justify;
+  color: #696868;
+  border-radius: 30px;
+  background-color: white;
+  -webkit-filter: drop-shadow(10px 10px 10px #cfc7cf);
+          filter: drop-shadow(10px 10px 10px #cfc7cf);
+}
+
+.qsntxtcolor {
+  background: -webkit-gradient(linear, left top, right top, from(#016996), color-stop(#8c00ff), to(#f09402));
+  background: linear-gradient(to right, #016996, #8c00ff, #f09402);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Contacts {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Contacts h3 {
+  font-size: 3vh;
+}
+
+.Contacts .inputNewsletter input {
+  border: 1px solid #e9e9e9;
+  height: 4vh;
+  outline: none;
+  font-size: larger;
+  font-family: "Syne";
+  border-radius: 4px;
+  width: 40%;
+  margin: 2vh 1vw 0 0vh;
+  padding: 1vh;
+}
+
+.Contacts .inputNewsletter button {
+  border: none;
+  outline: none;
+  padding: 0.5vh 2vw;
+  border-radius: 4px;
+  font-family: "Syne";
+  font-size: larger;
+  background-color: #5d08b3;
+  color: white;
+  cursor: pointer;
+}
+
+.Contacts .inputNewsletter button:hover {
+  background-color: #3e0479;
+}
+
+.LoginMe {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(92, 89, 89, 0.655);
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 900;
+}
+
+.LoginModal {
+  width: 60vw;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  background-color: white;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+
+.LoginModal .Login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.LoginModal .Login .InputBox {
+  width: 100%;
+  margin: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.LoginModal .Login .InputBox input,
+.LoginModal .Login .InputBox select {
+  border: 1px transparent solid;
+  height: 4.5vh;
+  width: 80%;
+  padding: 1vh;
+  font-family: "Syne";
+  background-color: #bebcbc58;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.LoginModal .Login .InputBox input:focus,
+.LoginModal .Login .InputBox select:focus {
+  outline: none;
+  border: 1px #550080 solid;
+}
+
+.LoginModal .Login .InputBox .OTP {
+  background-color: white;
+  text-align: center;
+  font-size: 3vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  letter-spacing: 0.4cm;
+  font-family: "Poppins";
+  color: #838181;
+}
+
+.LoginModal .Login .InputBox .OTP:focus {
+  outline: none;
+  border: 1px white solid;
+}
+
+.LoginModal .Login .InputBox select {
+  color: #7a7a7a;
+}
+
+.LoginModal .Login .Log,
+.LoginModal .Login .Sign {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  padding: 5vh 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.LoginModal .Login .Log form,
+.LoginModal .Login .Sign form {
+  width: 100%;
+  margin: 0;
+}
+
+.LoginModal .Login .Log h1,
+.LoginModal .Login .Sign h1 {
+  font-size: 5vh;
+}
+
+.LoginModal .Login .Log h3,
+.LoginModal .Login .Sign h3 {
+  color: #545454;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.LoginModal .Login .Log {
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateZ(0vh);
+          transform: translateZ(0vh);
+  overflow: hidden;
+}
+
+.LoginModal .Login .LoginButton {
+  cursor: pointer;
+  border: none;
+  padding: 1vh;
+  font-size: large;
+  width: 80%;
+  border-radius: 5px;
+  color: white;
+  margin: 2vh;
+  background: -webkit-gradient(linear, left top, right top, from(#016996), to(#8e05a3));
+  background: linear-gradient(to right, #016996, #8e05a3);
+}
+
+.LoginModal .Login .Sign {
+  position: absolute;
+  right: 0;
+  border-radius: 0vh 2vh 2vh 0vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200%;
+}
+
+.LoginModal .Login .Sign img {
+  height: 60%;
+}
+
+.ModalCloseButton {
+  cursor: pointer;
+  position: absolute;
+  top: -1vh;
+  right: 1vw;
+  background-color: #a3a0a1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+* {
+  font-family: "Syne";
+}
+/*# sourceMappingURL=components.css.map */

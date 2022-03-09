@@ -1,0 +1,243 @@
+.Dashboard {
+  height: 100vh;
+  width: 100vw;
+}
+
+.DashBar {
+  left: 0;
+  top: 7vh;
+  width: 13vw;
+  height: 93vh;
+  overflow: hidden;
+  padding: 0vw;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.DashBar h4 {
+  padding: 0 1vw;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.DashBar .MenuBox {
+  width: 13vw;
+  border-radius: 0 15px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5vh;
+  padding: 1vw;
+  cursor: pointer;
+  margin: 0.5vh 0;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.DashBar .MenuBox img {
+  height: 2vh;
+  margin-right: 2vw;
+}
+
+.DashBar .MenuBox:hover {
+  background-color: #d8d7d7;
+}
+
+.DashHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 1vw;
+  border-bottom: 0.5px solid #e4e1e1;
+}
+
+.DashHeader .leftMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.DashHeader .Menuu {
+  height: 3vh;
+  cursor: pointer;
+}
+
+.DashHeader .DashLogo {
+  height: 6vh;
+}
+
+.DashHeader .ProfileModal {
+  height: 35vh;
+  width: 20%;
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-filter: drop-shadow(5px 5px 5px #a7a6a6);
+          filter: drop-shadow(5px 5px 5px #a7a6a6);
+  -webkit-transform: translateX(25vw);
+          transform: translateX(25vw);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  padding: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.DashHeader .ProfileModal .imgQR {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.DashHeader .ProfileModal img {
+  height: 15vh;
+}
+
+.DashHeader .ProfileModal .ProfileImage {
+  height: 12vh;
+  border-radius: 50%;
+}
+
+.DashHeader .ProfileModal h2,
+.DashHeader .ProfileModal h3 {
+  margin: 0;
+}
+
+.DashHeader .SettingsProfile {
+  position: absolute;
+  right: 2vw;
+  padding: 0.5vh 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 15%;
+  background-color: #e6ecee;
+  border-radius: 10px;
+  height: 5vh;
+}
+
+.DashHeader .SettingsProfile img {
+  height: 2vh;
+  border-radius: 50%;
+}
+
+.QuickSetup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.QuickSetup .InputBox {
+  width: 65%;
+  margin: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.QuickSetup .InputBox input,
+.QuickSetup .InputBox select {
+  border: 1px transparent solid;
+  height: 4.5vh;
+  width: 80%;
+  padding: 1vh;
+  font-family: "Syne";
+  background-color: #bebcbc58;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.QuickSetup .InputBox input:focus,
+.QuickSetup .InputBox select:focus {
+  outline: none;
+  border: 1px #550080 solid;
+}
+
+.QuickSetup .LoginButton {
+  cursor: pointer;
+  border: none;
+  padding: 1vh;
+  font-size: large;
+  width: 50%;
+  border-radius: 5px;
+  color: white;
+  margin: 2vh;
+  background: -webkit-gradient(linear, left top, right top, from(#016996), to(#8e05a3));
+  background: linear-gradient(to right, #016996, #8e05a3);
+}
+
+.DashboardContent {
+  width: 80%;
+  height: 85vh;
+  background-color: #e6f3f7;
+  margin-left: 5vw;
+  padding: 2vh 2vw;
+  border-radius: 15px;
+}
+
+.DashDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=dashboard.css.map */

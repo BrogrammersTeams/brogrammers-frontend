@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Poppins:wght@300&family=Syne&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Syne", "Poppins", "Avent Pro";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100% 0 0 80%;
+  background: linear-gradient(to bottom, rgb(163, 3, 216), rgb(250, 0, 104));
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+  overflow-x: hidden;
+}
