@@ -1,0 +1,56 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+  transition: 0.3s;
+  width: 17rem;
+  height: 25rem;
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card-img-top {
+  width: 40%;
+  margin-top: 2rem;
+  border-radius: 50rem;
+  border: 5px solid #ddd;
+}
+
+.uname {
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+.about {
+  margin-top: -15px;
+}
+
+.btn1 {
+  margin: 5px;
+  background-color: #00be71;
+  border: 1px solid #00be71;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+}
+
+.skills {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.badge1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: left;
+}
+
+.BottomCard {
+  margin-top: 7px;
+}
