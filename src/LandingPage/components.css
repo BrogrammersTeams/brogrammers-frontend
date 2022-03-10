@@ -27,7 +27,7 @@
 }
 
 .AboutPage .AboutLgo {
-  height: 85%;
+  height: 45%;
 }
 
 .AboutPage .Text {
@@ -48,6 +48,10 @@
   height: 0px;
 }
 
+.AboutPage .Text h1 {
+  color: white;
+}
+
 .AboutPage .Text h2,
 .AboutPage .Text h3 {
   text-align: justify;
@@ -55,7 +59,7 @@
 }
 
 .AboutPage .Text h2 {
-  color: #545454;
+  color: #e4dede;
 }
 
 .AboutPage .Text h3 {
@@ -140,8 +144,8 @@
   margin: 2vh;
   padding: 0 1vw;
   border-radius: 10px;
-  -webkit-filter: drop-shadow(5px 5px 5px #ead3f0);
-          filter: drop-shadow(5px 5px 5px #ead3f0);
+  -webkit-filter: drop-shadow(5px 5px 5px #544f55);
+          filter: drop-shadow(5px 5px 5px #544f55);
 }
 
 .ServiceCard img {
@@ -173,8 +177,8 @@
   padding: 1vh 3vw;
   margin: 2vh 0;
   border-radius: 10px;
-  -webkit-filter: drop-shadow(5px 5px 5px #cfc7cf);
-          filter: drop-shadow(5px 5px 5px #cfc7cf);
+  -webkit-filter: drop-shadow(5px 5px 5px #b4adb4);
+          filter: drop-shadow(5px 5px 5px #b4adb4);
   width: 100%;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -214,8 +218,8 @@
   color: #696868;
   border-radius: 30px;
   background-color: white;
-  -webkit-filter: drop-shadow(10px 10px 10px #cfc7cf);
-          filter: drop-shadow(10px 10px 10px #cfc7cf);
+  -webkit-filter: drop-shadow(5px 5px 5px #b4adb4);
+          filter: drop-shadow(5px 5px 5px #b4adb4);
 }
 
 .qsntxtcolor {
@@ -236,6 +240,26 @@
   font-size: 3vh;
 }
 
+.Contacts h2 {
+  color: #dddada !important;
+  font-weight: bolder;
+}
+
+.Contacts img {
+  height: 30vh;
+}
+
+.Contacts .inputNewsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40vw;
+  height: 5vh;
+}
+
 .Contacts .inputNewsletter input {
   border: 1px solid #e9e9e9;
   height: 4vh;
@@ -243,7 +267,7 @@
   font-size: larger;
   font-family: "Syne";
   border-radius: 4px;
-  width: 40%;
+  width: 60%;
   margin: 2vh 1vw 0 0vh;
   padding: 1vh;
 }
@@ -251,6 +275,9 @@
 .Contacts .inputNewsletter button {
   border: none;
   outline: none;
+  height: 4.5vh;
+  margin: 0;
+  margin-bottom: -2vh;
   padding: 0.5vh 2vw;
   border-radius: 4px;
   font-family: "Syne";

@@ -1,0 +1,76 @@
+.create_box {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.home1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.create_box_btn {
+  background-color: blue;
+  width: 20%;
+  margin-top: 5px;
+  color: white;
+}
+
+.answer_box {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.enter_code_in {
+  background-color: rgb(255, 255, 255);
+  border: 2px;
+  border-radius: 5px;
+  border-color: #27d9b9;
+  height: 3rem;
+  margin-bottom: 6px;
+  width: 25%;
+  color: rgb(0, 0, 0);
+  z-index: 900;
+}
+
+.create_box_btn2 {
+  background-color: blue;
+  width: 25%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.buttonsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.NormalText1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.BtNcontainer {
+  color: #27d9b9;
+}
+
+.hangup_button {
+  background-color: red;
+  width: 6%;
+  height: 5%;
+  margin-right: 27rem;
+  margin-top: 5px;
+  color: white;
+}

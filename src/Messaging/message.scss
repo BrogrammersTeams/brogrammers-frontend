@@ -1,0 +1,41 @@
+.Compile {
+  width: 30vw;
+  height: 40vh;
+  background-color: white;
+  padding: 2vh 1vw;
+  border-radius: 10px;
+  position: absolute;
+  right: 3vw;
+  bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  textarea {
+    height: 70%;
+  }
+  overflow: hidden;
+
+  h4 {
+    margin-bottom: 2vh;
+  }
+  button {
+    background-color: rgb(255, 0, 106);
+    padding: 1vh;
+    border-radius: 10px;
+    margin-top: 2vh;
+    color: white;
+  }
+  h5 {
+    position: absolute;
+    right: 1vw;
+    cursor: pointer;
+  }
+  transition-duration: 0.5s;
+}
+
+.Message {
+  background-color: white;
+  width: 100%;
+  padding: 1vh;
+  margin: 1vh 0;
+  border-radius: 10px;
+}

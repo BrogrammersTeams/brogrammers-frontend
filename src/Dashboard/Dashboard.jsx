@@ -11,6 +11,9 @@ import MyProjects from "../Projects/MyProjects";
 import CreateProject from "../Projects/CreateProject";
 import GlobalProjects from "../Projects/GlobalProjects";
 import HomeDash from "./HomeDash";
+import UserSettings from "./UserSettings/Settings";
+import Container from "../Quiz/Container";
+import VideoCalling from "./VideoCall";
 
 const Dashboard = () => {
   let uid = JSON.stringify(localStorage.getItem("uuid"));
@@ -65,7 +68,10 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    setTimeout(setDetails, 5);
+    // setTimeout(setDetails, 5);
+    setTimeout(() => {
+      setDetails();
+    }, 5);
   }, []);
   return (
     <div className="Dashboard">
@@ -81,20 +87,25 @@ const Dashboard = () => {
         </div>
         <div className="SettingsProfile">
           <img
-            src={menu}
+            src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/New%20project.png?raw=true"
             onClick={() => {
               setdashMenu(5);
             }}
           ></img>
           <img
-            src={menu}
+            src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/home.png?raw=true"
             onClick={() => {
               setdashMenu(0);
             }}
           ></img>
-          <img src={menu}></img>
           <img
-            src={menu}
+            src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/settings.png?raw=true"
+            onClick={() => {
+              setdashMenu(6);
+            }}
+          ></img>
+          <img
+            src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/user.png?raw=true"
             onClick={() => {
               setQR();
               setProfileMenu(!profileMenu);
@@ -135,7 +146,7 @@ const Dashboard = () => {
             }}
             onClick={() => setdashMenu(1)}
           >
-            <img src={menu}></img>
+            <img src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/mail.png?raw=true"></img>
             <h3
               style={{
                 color: dashmenu == 1 ? "white" : "",
@@ -151,7 +162,7 @@ const Dashboard = () => {
             }}
             onClick={() => setdashMenu(2)}
           >
-            <img src={menu}></img>
+            <img src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/sent.png?raw=true"></img>
             <h3
               style={{
                 color: dashmenu == 2 ? "white" : "",
@@ -170,7 +181,7 @@ const Dashboard = () => {
             }}
             onClick={() => setdashMenu(3)}
           >
-            <img src={menu}></img>
+            <img src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/projects.png?raw=true"></img>
             <h3
               style={{
                 color: dashmenu == 3 ? "white" : "",
@@ -186,7 +197,7 @@ const Dashboard = () => {
             }}
             onClick={() => setdashMenu(4)}
           >
-            <img src={menu}></img>
+            <img src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/add.png?raw=true"></img>
             <h3
               style={{
                 color: dashmenu == 4 ? "white" : "",
@@ -195,14 +206,56 @@ const Dashboard = () => {
               New Project
             </h3>
           </div>
+          <h4 style={{ opacity: !menuShow ? "0" : "1" }}>Badges</h4>
+
+          <div
+            className="MenuBox"
+            style={{
+              backgroundColor: dashmenu == 7 ? "rgb(243, 44, 120)" : "",
+            }}
+            onClick={() => setdashMenu(7)}
+          >
+            <img src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/badges.png?raw=true"></img>
+            <h3
+              style={{
+                color: dashmenu == 7 ? "white" : "",
+              }}
+            >
+              My Badges
+            </h3>
+          </div>
+          <h4 style={{ opacity: !menuShow ? "0" : "1" }}>Video Call</h4>
+
+          <div
+            className="MenuBox"
+            style={{
+              backgroundColor: dashmenu == 8 ? "rgb(243, 44, 120)" : "",
+            }}
+            onClick={() => setdashMenu(8)}
+          >
+            <img src="https://github.com/BrogrammersTeams/brogrammers-frontend/blob/main/src/icons/add.png?raw=true"></img>
+            <h3
+              style={{
+                color: dashmenu == 8 ? "white" : "",
+              }}
+            >
+              Video Call
+            </h3>
+          </div>
         </div>
-        <div className="DashboardContent">
+        <div
+          className="DashboardContent"
+          style={{ width: menuShow ? "" : "93%" }}
+        >
           {dashmenu == 0 && <HomeDash />}
           {dashmenu == 1 && <Inbox />}
           {dashmenu == 2 && <Sent />}
           {dashmenu == 3 && <MyProjects />}
           {dashmenu == 4 && <CreateProject />}
           {dashmenu == 5 && <GlobalProjects />}
+          {dashmenu == 6 && <UserSettings />}
+          {dashmenu == 7 && <Container />}
+          {dashmenu == 8 && <VideoCalling />}
         </div>
       </div>
 

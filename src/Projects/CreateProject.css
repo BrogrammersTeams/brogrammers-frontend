@@ -1,17 +1,4 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-body,
-html {
-  height: 100%;
-  font-family: SourceSansPro-Regular, sans-serif;
-}
-
 a {
-  font-family: SourceSansPro-Regular;
   font-size: 14px;
   line-height: 1.7;
   color: #666666;
@@ -40,7 +27,7 @@ h6 {
 }
 
 p {
-  font-family: SourceSansPro-Regular;
+  font-family: "Syne";
   font-size: 14px;
   line-height: 1.7;
   color: #666666;
@@ -56,6 +43,7 @@ li {
 input {
   outline: none;
   border: none;
+  font-family: "Syne";
 }
 
 textarea {
@@ -104,10 +92,15 @@ button {
   outline: none !important;
   border: none;
   background: transparent;
+  font-family: "Syne";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {
   cursor: pointer;
+  color: "white";
 }
 
 iframe {
@@ -143,7 +136,6 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background: #1c8ffc;
   pointer-events: none;
 }
 
@@ -157,17 +149,9 @@ iframe {
 }
 
 .wrap-contact100 {
-  width: 800px;
-  background: #fff;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 5px;
   overflow: hidden;
-  padding: 72px 150px 25px 150px;
-
-  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .contact100-form {
@@ -176,7 +160,7 @@ iframe {
 
 .contact100-form-title {
   display: block;
-  font-family: SourceSansPro-Bold;
+  font-family: "Syne";
   font-size: 30px;
   color: #333333;
   line-height: 1.2;
@@ -188,7 +172,7 @@ iframe {
   width: 100%;
   position: relative;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 30px;
 }
 
@@ -196,7 +180,7 @@ iframe {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: SourceSansPro-Bold;
+  font-family: "Syne";
   font-size: 16px;
   color: #4b2354;
   line-height: 1.2;
@@ -265,9 +249,9 @@ textarea.input100 {
   min-width: 160px;
   height: 42px;
   background-color: #1c8ffc;
-  border-radius: 20px;
+  border-radius: 10px;
 
-  font-family: JosefinSans-Bold;
+  font-family: "Syne";
   font-size: 14px;
   color: #fff;
   line-height: 1.2;
@@ -336,14 +320,14 @@ textarea.input100 {
   padding: 0 45px 0 22px;
   pointer-events: none;
 
-  font-family: SourceSansPro-Bold;
+  font-family: "Syne";
   font-size: 16px;
   color: #fa4251;
   line-height: 1.2;
 }
 
 .btn-hide-validate {
-  font-family: Material-Design-Iconic-Font;
+  font-family: "Syne";
   font-size: 15px;
   color: #fa4251;
   cursor: pointer;
@@ -366,7 +350,7 @@ textarea.input100 {
 
 .true-validate::after {
   content: "\f269";
-  font-family: Material-Design-Iconic-Font;
+  font-family: "Syne";
   font-size: 15px;
   color: #57b846;
   display: -webkit-box;
@@ -394,15 +378,11 @@ textarea.input100 {
 }
 
 .contact100-more {
-  font-family: SourceSansPro-Regular;
+  font-family: "Syne";
   font-size: 16px;
   color: #999999;
   line-height: 1.5;
   text-align: center;
-}
-
-.contact100-more-highlight {
-  color: #1c8ffc;
 }
 
 /* tags css */
@@ -433,7 +413,7 @@ textarea.input100 {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: SourceSansPro-Bold;
+  font-family: "Syne";
   font-size: 16px;
   color: #4b2354;
   line-height: 1.2;
@@ -442,15 +422,17 @@ textarea.input100 {
 .tag {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 7px 0;
   margin-right: 10px;
   padding: 0 10px;
   padding-right: 5px;
-  border: 1px solid #1c8ffc;
+  border: none;
   border-radius: 5px;
-  background-color: #1c8ffc;
+  background-color: #f10d92;
   white-space: nowrap;
   color: white;
+  width: 10%;
 }
 
 .tag button {

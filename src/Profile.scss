@@ -1,0 +1,129 @@
+.ViewProfile {
+  img {
+    height: 10vh;
+  }
+}
+
+.grid-card {
+  display: flex;
+}
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  width: 100%;
+  color: white;
+}
+.profile-card {
+  width: 80%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/691/649/204/ipad-itunes-rainbow-el-wallpaper-preview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .profile-card {
+    display: block;
+  }
+}
+
+.image-div {
+  padding: 0 20px;
+  display: flex;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.image-div img {
+  width: 100%;
+  height: 90%;
+  border: 10px;
+  border-radius: 0.5rem;
+}
+
+.profile-pic {
+  width: 300px !important;
+  height: 300px;
+  border-radius: 1rem;
+  transform: translateX(-25%);
+  object-fit: cover;
+  transition: all ease-in-out 200ms;
+}
+
+.profile-pic:hover {
+  /* transform: scale(2); */
+  filter: drop-shadow(5px 5px 10px grey);
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: -4rem;
+  text-align: left;
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.ProjectOnProfile {
+  width: 80%;
+}
+
+.detail-container h1,
+.detail-container p {
+  color: white;
+}
+
+.ProjectCard2 {
+  width: 80%;
+  background-color: rgb(250, 250, 250);
+  margin: 10%;
+  margin-top: 2vh;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  position: relative;
+  h3 {
+    margin: 0;
+    font-size: 5vh;
+    font-weight: bold;
+    color: rgb(80, 2, 80);
+  }
+  h5 {
+    margin: 0;
+    color: gray;
+  }
+
+  .tags {
+    display: flex;
+    padding: 0vh 0.5vw;
+    border-radius: 5px;
+    width: 30vw;
+    position: absolute;
+    right: 1vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    top: 1vh;
+
+    p {
+      padding: 1vh 1vw;
+      background-color: rgb(104, 212, 240);
+      margin-right: 0.5vh;
+      color: white;
+      border-radius: 5px;
+    }
+
+    p:nth-child(1) {
+      background: rgb(236, 138, 138);
+    }
+    p:nth-child(2) {
+      background: rgb(208, 236, 138);
+    }
+  }
+}

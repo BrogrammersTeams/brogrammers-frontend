@@ -22,7 +22,7 @@
   }
 
   .AboutLgo {
-    height: 85%;
+    height: 45%;
   }
 
   .Text {
@@ -39,13 +39,17 @@
 
     height: 100%;
 
+    h1 {
+      color: white;
+    }
+
     h2,
     h3 {
       text-align: justify;
       margin: 0.8vh 0;
     }
     h2 {
-      color: #545454;
+      color: #e4dede;
     }
     h3 {
       margin-top: 2.5vh;
@@ -111,7 +115,7 @@
   margin: 2vh;
   padding: 0 1vw;
   border-radius: 10px;
-  filter: drop-shadow(5px 5px 5px rgb(234, 211, 240));
+  filter: drop-shadow(5px 5px 5px rgb(84, 79, 85));
   img {
     height: 4vh;
   }
@@ -146,7 +150,7 @@
   padding: 1vh 3vw;
   margin: 2vh 0;
   border-radius: 10px;
-  filter: drop-shadow(5px 5px 5px rgb(207, 199, 207));
+  filter: drop-shadow(5px 5px 5px rgb(180, 173, 180));
   width: 100%;
   h2 {
     font-size: 3vh;
@@ -174,7 +178,7 @@
   color: #696868;
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
-  filter: drop-shadow(10px 10px 10px rgb(207, 199, 207));
+  filter: drop-shadow(5px 5px 5px rgb(180, 173, 180));
 }
 
 .qsntxtcolor {
@@ -194,8 +198,21 @@
   h3 {
     font-size: 3vh;
   }
+  h2 {
+    color: rgb(221, 218, 218) !important;
+    font-weight: bolder;
+  }
+
+  img {
+    height: 30vh;
+  }
 
   .inputNewsletter {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 5vh;
+
     input {
       border: 1px solid #e9e9e9;
       height: 4vh;
@@ -203,13 +220,16 @@
       font-size: larger;
       font-family: "Syne";
       border-radius: 4px;
-      width: 40%;
+      width: 60%;
       margin: 2vh 1vw 0 0vh;
       padding: 1vh;
     }
     button {
       border: none;
       outline: none;
+      height: 4.5vh;
+      margin: 0;
+      margin-bottom: -2vh;
       padding: 0.5vh 2vw;
       border-radius: 4px;
       font-family: "Syne";
@@ -236,8 +256,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-     z-index: 900;
-
+  z-index: 900;
 }
 
 .LoginModal {
@@ -253,10 +272,8 @@
   .Login {
     display: flex;
     height: 100%;
-   
 
-    .InputBox
-     {
+    .InputBox {
       width: 100%;
       margin: 1vh;
       display: flex;

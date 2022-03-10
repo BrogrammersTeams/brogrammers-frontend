@@ -1,38 +1,38 @@
 import React from "react";
 
 import "./components.css";
-import img from "./BackRes/hospital.mp4";
+import img from "./BackRes/Untitled.mp4";
 
 import serviceIcon from "./BackRes/fav.png";
 
 const AboutPage = (props) => {
   let services = [
     {
-      servicename: "Service1",
+      servicename: "Meet new People",
       image: serviceIcon,
     },
     {
-      servicename: "Service2",
+      servicename: "Messaging",
       image: serviceIcon,
     },
     {
-      servicename: "Service3",
+      servicename: "Store Projects",
       image: serviceIcon,
     },
     {
-      servicename: "Service4",
+      servicename: "Video Calling",
       image: serviceIcon,
     },
     {
-      servicename: "Service5",
+      servicename: "Collaborate",
       image: serviceIcon,
     },
     {
-      servicename: "Service6",
+      servicename: "Open Source",
       image: serviceIcon,
     },
     {
-      servicename: "Service7",
+      servicename: "Industry Standards",
       image: serviceIcon,
     },
   ];
@@ -43,16 +43,15 @@ const AboutPage = (props) => {
           Say <b> Know </b> More !
         </h1>
         <h2>
-          We have been in the field since 20 years and have expertised in
-          delivering quality service to our beloved people.
+  
         </h2>
-        <h2>We maintain strict protocols in all aspects.</h2>
+  
         <h3>Our Services</h3>
         <div className="ServicesAbout">
           {services.map((item) => (
             <div className="ServiceCard">
               <img src={item.image}></img>
-              <h2>{item.servicename}</h2>
+              <h4>{item.servicename}</h4>
             </div>
           ))}
         </div>

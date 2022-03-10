@@ -1,0 +1,77 @@
+.GlobalProjects {
+  h1 {
+    margin: 1vh;
+    font-size: 3vh;
+    font-weight: bold;
+  }
+}
+
+.ProjectCard {
+  width: 100%;
+  background-color: white;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 2vh;
+  h3 {
+    margin: 0;
+    font-size: 5vh;
+    font-weight: bold;
+    color: rgb(80, 2, 80);
+  }
+  h5 {
+    margin: 0;
+    color: gray;
+  }
+
+  .tags {
+    display: flex;
+    padding: 0vh 0.5vw;
+    border-radius: 5px;
+    width: 30vw;
+    position: absolute;
+    right: 1vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    top: 1vh;
+
+    p {
+      padding: 1vh 1vw;
+      background-color: rgb(104, 212, 240);
+      margin-right: 0.5vh;
+      color: white;
+      border-radius: 5px;
+    }
+
+    p:nth-child(1) {
+      background: rgb(236, 138, 138);
+    }
+    p:nth-child(2) {
+      background: rgb(208, 236, 138);
+    }
+  }
+}
+
+.Fille {
+  background-color: rgb(41, 128, 117);
+  padding: 1vh 2vw;
+  width: fit-content;
+  border-radius: 15px;
+  color: white;
+  font-size: small;
+  cursor: pointer;
+}
+
+.Adddd {
+  padding: 1vh 2vw;
+  border: 2px dashed rgb(5, 113, 180);
+  padding: 1vh 2vw;
+  width: fit-content;
+  border-radius: 10px;
+  //   color: white;
+  font-size: small;
+  font-weight: bold;
+  margin: 1vh 0;
+  cursor: pointer;
+}

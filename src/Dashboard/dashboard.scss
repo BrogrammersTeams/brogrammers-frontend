@@ -13,6 +13,8 @@
 
   h4 {
     padding: 0 1vw;
+    margin: 1vh 0;
+    font-weight: bold;
     transition-duration: 0.2s;
   }
 
@@ -64,6 +66,7 @@
 
   .ProfileModal {
     height: 35vh;
+    z-index: 800;
     width: 20%;
     position: absolute;
     top: 8vh;
@@ -158,12 +161,13 @@
 }
 
 .DashboardContent {
-  width: 80%;
+  width: 83%;
   height: 85vh;
   background-color: rgb(230, 243, 247);
-  margin-left: 5vw;
-  padding: 2vh 2vw;
+  margin-left: 2vw;
+  padding: 2vh 1vw;
   border-radius: 15px;
+  overflow-y: scroll;
 }
 
 .DashDown {

@@ -5,6 +5,7 @@
   width: 100vw;
   overflow: hidden;
   overflow-x: hidden;
+  background-color: #030007;
 }
 
 .Page {
@@ -93,6 +94,14 @@
   }
 }
 
+.Sign {
+  background-image: url("../res/yo.gif");
+  background-size: contain;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+
 #SignMenu {
   cursor: pointer;
   width: fit-content;
@@ -164,68 +173,68 @@ a {
   height: 70vh;
 }
 
-// .BackImageMake {
-//   z-index: 0;
-//   transition-duration: 1s;
-//   position: absolute;
-//   height: 70vh;
-//   width: 50vw;
-//   top: 0vh;
-//   left: 15vw;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-evenly;
+.BackImageMake {
+  z-index: 0;
+  transition-duration: 1s;
+  position: absolute;
+  height: 70vh;
+  width: 50vw;
+  top: 0vh;
+  left: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-//   .Inn {
-//     width: 22%;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: space-evenly;
-//     .Img2 {
-//       height: 43%;
-//       filter: brightness(0.5);
+  .Inn {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .Img2 {
+      height: 43%;
+      filter: brightness(0.5);
 
-//       width: 100%;
-//       background-size: cover;
-//       background-image: url("./BackRes/solen-feyissa-6kevOTcUYw8-unsplash.jpg");
-//     }
-//     .Img3 {
-//       height: 55%;
-//       width: 100%;
-//       filter: brightness(0.8);
+      width: 100%;
+      background-size: cover;
+      background-image: url("./BackRes/5.jpg");
+    }
+    .Img3 {
+      height: 55%;
+      width: 100%;
+      filter: brightness(0.8);
 
-//       background-size: cover;
-//       background-image: url("./BackRes/akram-huseyn-brbF5FSnSgI-unsplash.jpg");
-//     }
-//   }
-//   .Img1 {
-//     height: 60%;
-//     width: 25%;
-//     filter: brightness(0.8);
+      background-size: cover;
+      background-image: url("./BackRes/4.jpg");
+    }
+  }
+  .Img1 {
+    height: 60%;
+    width: 25%;
+    filter: brightness(0.8);
 
-//     background-size: cover;
-//     background-image: url("./BackRes/miguel-ausejo-vsSu0oGtLoI-unsplash.jpg");
-//   }
+    background-size: cover;
+    background-image: url("./BackRes/3.jpg");
+  }
 
-//   .Img4 {
-//     height: 80%;
-//     width: 28%;
-//     filter: brightness(0.8);
+  .Img4 {
+    height: 80%;
+    width: 28%;
+    filter: brightness(0.8);
 
-//     background-size: cover;
-//     background-image: url("./BackRes/jon-tyson-ne2mqMgER8Y-unsplash.jpg");
-//   }
-//   .Img5 {
-//     height: 50%;
-//     margin-top: 15%;
-//     filter: brightness(0.8);
-//     width: 22%;
-//     background-size: cover;
-//     background-image: url("./BackRes/alvin-leopold-yvh8fDhqHFg-unsplash.jpg");
-//   }
-// }
+    background-size: cover;
+    background-image: url("./BackRes/1.jpg");
+  }
+  .Img5 {
+    height: 50%;
+    margin-top: 15%;
+    filter: brightness(0.8);
+    width: 22%;
+    background-size: cover;
+    background-image: url("./BackRes/2.jpg");
+  }
+}
 
 .OncomingHead {
   z-index: 1;

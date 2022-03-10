@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./landing.css";
 
-import logo from "../res/MainLogo.gif";
+import logo from "../res/black.gif";
+import signLogo from '../res/yo.gif'
 import { db } from "../firebase";
 
 import menuIcon from "../res/menu.png";
@@ -12,6 +13,7 @@ import FAQPage from "./FAQ";
 import ContactsPage from "./Contact";
 
 import { v4 as uuid } from "uuid";
+import axios from "axios";
 const LandingPage = () => {
   let [menu, showMenu] = useState(false);
   let [user, setuser] = useState(undefined);
@@ -23,6 +25,8 @@ const LandingPage = () => {
   let [loginSignup, setloginSignup] = useState(false);
 
   let [loginSignupSec, setloginSignupSec] = useState(false);
+  let [clientOtp, setClientOtp] = useState(0);
+  let [userOtp, setUserOtp] = useState(0);
 
   let [genuuid, setuuid] = useState("");
 
@@ -41,6 +45,59 @@ const LandingPage = () => {
       ...prevUser,
       [e.target.name]: e.target.value,
     }));
+  };
+
+  const sendUserToBackend = async () => {
+    const { data } = await axios.post(
+      "https://brogrammers-backend.herokuapp.com/user",
+      {
+        email: NewSign.email,
+        uuid: NewSign.uuid,
+      }
+    );
+
+    if (true) setClientOtp(data.otp);
+    // alert(data);
+  };
+
+  const getOTP = () => Math.floor(Math.random() * 1000000);
+
+  const verifyOTP = () => {
+    // e.preventDefault();
+    if (clientOtp != userOtp) {
+      alert("Otp doesnt Match!!!");
+      return false;
+    }
+    // alert("Passed!!");
+    db.collection("users")
+      .doc(NewSign.email)
+      .set(NewSign)
+      .then(() => {
+        localStorage.setItem("YayAuth", true);
+        localStorage.setItem("uuid", NewSign.uuid);
+        localStorage.setItem("email", NewSign.email);
+        localStorage.setItem("fullName", "");
+
+        // setsignedInUser(NewSign);
+        window.location.reload();
+      });
+    sendUserToBackend();
+
+    return true;
+  };
+
+  const sendOtp = async () => {
+    const { data } = await axios.post(
+      "https://brogrammers-backend.herokuapp.com/email",
+      {
+        to: NewSign.email,
+        subject: "Email Verification - DevConnect",
+        topic: "OTP",
+      }
+    );
+
+    if (true) setClientOtp(data.otp);
+    // alert(data);
   };
 
   const getUser = () => {
@@ -161,7 +218,7 @@ const LandingPage = () => {
               Grow your network{" "}
             </h2>
           </div>
-          {/* <div
+          <div
             className="BackImageMake"
             style={{
               transform: menu ? "translateX(-40vw)" : "",
@@ -174,9 +231,9 @@ const LandingPage = () => {
             </div>
             <div className="Img4" data-aos="fade-up" data-aos-delay="1400" />
             <div className="Img5" data-aos="fade-down" data-aos-delay="1800" />
-          </div> */}
+          </div>
         </div>
-        {/* <div
+        <div
           style={{
             opacity: showingPage == 1 ? "1" : "0",
 
@@ -190,8 +247,8 @@ const LandingPage = () => {
           className="PageModal"
         >
           <AboutPage Styling="1" />
-        </div> */}
-        {/* <div
+        </div>
+        <div
           style={{
             opacity: showingPage == 2 ? "1" : "0",
             transform:
@@ -204,8 +261,8 @@ const LandingPage = () => {
           className="PageModal"
         >
           <FAQPage />
-        </div> */}
-        {/* <div
+        </div>
+        <div
           style={{
             opacity: showingPage == 3 ? "1" : "0",
 
@@ -219,7 +276,7 @@ const LandingPage = () => {
           className="PageModal"
         >
           <ContactsPage />
-        </div> */}
+        </div>
         <div className="landingfooter" data-aos="fade-up" data-aos-delay="2800">
           <h1
             className="ModalChanger"
@@ -349,6 +406,7 @@ const LandingPage = () => {
               <button
                 className="LoginButton"
                 onClick={() => {
+                  sendOtp();
                   db.collection("users")
                     .doc(NewSign.email)
                     .get()
@@ -389,25 +447,14 @@ const LandingPage = () => {
                   type="text"
                   placeholder="OTP"
                   className="OTP"
-                  onChange={handleChange}
+                  onChange={(e) => setUserOtp(e.target.value)}
                 ></input>
               </div>
               <button
                 className="LoginButton"
                 onClick={() => {
-                  alert(NewSign.email);
-                  db.collection("users")
-                    .doc(NewSign.email)
-                    .set(NewSign)
-                    .then(() => {
-                      localStorage.setItem("YayAuth", true);
-                      localStorage.setItem("uuid", NewSign.uuid);
-                      localStorage.setItem("email", NewSign.email);
-                      localStorage.setItem("fullName", "");
-
-                      // setsignedInUser(NewSign);
-                      window.location.reload();
-                    });
+                  verifyOTP();
+                //   alert(NewSign.email);
                 }}
               >
                 Sign Up
@@ -426,7 +473,9 @@ const LandingPage = () => {
               >
                 X
               </h6>
+             
             </div>
+
           </div>
         </div>
       </div>

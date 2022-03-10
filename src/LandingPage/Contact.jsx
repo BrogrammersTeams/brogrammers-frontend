@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 
 import "./components.css";
-import logo from "../res/MainLogo.gif";
+import logo from "../res/black.gif";
 import { db } from "../firebase";
 
 const ContactsPage = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const handleSubmit = () => {
-
     db.collection("newsletter")
       .add({
         email: email,

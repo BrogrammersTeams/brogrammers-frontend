@@ -6,21 +6,19 @@ const FAQPage = () => {
   let FAQ = [
     {
       qsn: "Who can post to DevConnect?",
-        ans:"Anyone who has an account on DevConnect can post. You have permission to make a new post of any kind as long as it meets our guidelines. ",
-      
+      ans: "Anyone who has an account on DevConnect can post. You have permission to make a new post of any kind as long as it meets our guidelines. ",
     },
     {
       qsn: "Who is DevConnect for ?",
       ans: "You! And it’s not just developers who build companies but for small teams, project managers, and college professors all use DevConnect to connect different people and build amazing things together.",
     },
     {
-      qsn: "Why should I use DevConnect?", 
-      ans:"Because it is a platform where you can connect with other developers and build your own projects. You can also post your projects and get feedback from other developers. ",
+      qsn: "Why should I use DevConnect?",
+      ans: "Because it is a platform where you can connect with other developers and build your own projects. You can also post your projects and get feedback from other developers. ",
     },
     {
       qsn: "How do I start using DevConnect?",
-      ans:"All you need to do is sign up and create a profile. You can then start posting your projects and getting feedback from other developers.",
-      
+      ans: "All you need to do is sign up and create a profile. You can then start posting your projects and getting feedback from other developers.",
     },
     {
       qsn: "What is the best thing about DevConnect?",
@@ -31,8 +29,8 @@ const FAQPage = () => {
       ans: "yes, it definitely will. ",
     },
     {
-        qsn: "How do I start using DevConnect?",
-        ans:"All you need to do is sign up and create a profile. You can then start posting your projects and getting feedback from other developers.",
+      qsn: "How do I start using DevConnect?",
+      ans: "All you need to do is sign up and create a profile. You can then start posting your projects and getting feedback from other developers.",
     },
   ];
 
@@ -66,4 +64,3 @@ const FAQPage = () => {
 };
 
 export default FAQPage;
-
